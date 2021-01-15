@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="walmarttest" parallel="tests">
+<listeners>
+<listener class-name="extentReport.Extentreport_listener"/>
+</listeners>
+
+<test name="Walmart">
+<classes>
+<class name="testsLayer.MyRecommendation_Test"/>
+<class name="testsLayer.MyLists_Test"/>
+<class name="testsLayer.OrderHistory_Test"/>
+<class name="testsLayer.MyAccount_Test"/>
+<class name="testsLayer.SearchProducts_Test"/>
+<class name="testsLayer.MyRegistries_Test"/>
+<class name="testsLayer.ShoppingCart_Test"/>
+<class name="testsLayer.CreditCard_Test"/>
+<class name="testsLayer.Addresses_Test"/>
+<class name="testsLayer.PersonalSetting_Test"/>
+<class name="testsLayer.CreateAccount_Test"/>
+
+</classes>
+</test>
+</suite>

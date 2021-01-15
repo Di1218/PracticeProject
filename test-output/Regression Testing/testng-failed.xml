@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression Testing]">
+  <test name="Regression(failed)">
+    <classes>
+      <class name="testsLayer.SearchProducts_Test">
+        <methods>
+          <include name="TC_35_My_Account_page"/>
+          <include name="TC_62_Sort_items"/>
+          <include name="TC_64_filter_items"/>
+          <include name="objectSet"/>
+          <include name="TC_65_sorting_and_filtering_together"/>
+          <include name="TC_63_Sort_morethan_1_items"/>
+          <include name="tear"/>
+        </methods>
+      </class> <!-- testsLayer.SearchProducts_Test -->
+      <class name="testsLayer.MyLists_Test">
+        <methods>
+          <include name="TC_96_My_List_page_clickOn_Item"/>
+          <include name="TC_95_My_Lists_Page_searchBox"/>
+          <include name="objectSet"/>
+        </methods>
+      </class> <!-- testsLayer.MyLists_Test -->
+      <class name="testsLayer.OrderHistory_Test">
+        <methods>
+          <include name="TC_84_Order_History_Start_Shopping_link"/>
+          <include name="objectSet"/>
+          <include name="TC_81_Order_History_page"/>
+          <include name="TC_82_Order_History_page_select_any_year_from_last_10years"/>
+          <include name="TC_83_Order_history_noOrder_placed"/>
+        </methods>
+      </class> <!-- testsLayer.OrderHistory_Test -->
+      <class name="testsLayer.MyRecommendation_Test">
+        <methods>
+          <include name="TC_93_My_Recommendation_page_text_verify"/>
+          <include name="objectSet"/>
+        </methods>
+      </class> <!-- testsLayer.MyRecommendation_Test -->
+      <class name="testsLayer.MyAccount_Test">
+        <methods>
+          <include name="TC_39_My_account_page_modification_of_orders_with_valid_ordernum"/>
+          <include name="TC_40_My_account_page_modification_of_orders_with_Invalid_ordernum"/>
+          <include name="objectSet"/>
+          <include name="TC_41_My_account_page_clickOn_view_order"/>
+          <include name="TC_36_My_Account_page_shipping_num"/>
+        </methods>
+      </class> <!-- testsLayer.MyAccount_Test -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Regression Testing] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression Testing">
+<test name="Regression">
+<classes>
+
+<class name="testsLayer.MyRecommendation_Test"/>
+<class name="testsLayer.MyLists_Test"/>
+<class name="testsLayer.OrderHistory_Test"/>
+<class name="testsLayer.MyAccount_Test"/>
+<class name="testsLayer.SearchProducts_Test"/>
+</classes>
+</test>
+</suite>
+
+

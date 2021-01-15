@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Integration Testing">
+<test name="Integration">
+<classes>
+<class name="testsLayer.CreateAccount_Test"/>
+
+<class name="testsLayer. CreditCard_Test "/>
+<class name="testsLayer. Addresses_Test "/>
+
+<class name="testsLayer. PersonalSetting_Test"/>
+</classes>
+</test>
+</suite>
+
+
