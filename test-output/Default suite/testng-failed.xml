@@ -3,17 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="testsLayer.CreateAccount_Test">
+      <class name="testsLayer.Addresses_Test">
         <methods>
-          <include name="TC_14_createAccount_with_valid_emailId"/>
-          <include name="TC_1_createAccount_Firstname_with_2_char"/>
-          <include name="TC_19_createAccount_check_password_in_bulletform"/>
-          <include name="TC_16_createAccount_with_Null_emailId"/>
           <include name="objectSet"/>
-          <include name="tearDown"/>
-          <include name="TC_34_RegisteredUesr_navigation_from_signout_to_signin"/>
+          <include name="TC_42_Addresses_page_add_address_with_valid_data"/>
         </methods>
-      </class> <!-- testsLayer.CreateAccount_Test -->
+      </class> <!-- testsLayer.Addresses_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

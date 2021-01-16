@@ -28,19 +28,19 @@ public class CreateAccount_Page {
 		return myAccountLink;
 	}
 
-	@FindBy(xpath="//span[contains(text(),'Sign in')]")
-	private WebElement signInLink;	
+	@FindBy(xpath = "//span[contains(text(),'Sign in')]")
+	private WebElement signInLink;
+
 	public WebElement getSignInLink() {
 		return signInLink;
 	}
-	
 
-	@FindBy(xpath="//button[contains(text(),'Sign in')]")
+	@FindBy(xpath = "//button[contains(text(),'Sign in')]")
 	private WebElement signInButton;
+
 	public WebElement getSignInButton() {
 		return signInButton;
 	}
-	
 
 	@FindBy(id = "firstName")
 	private WebElement fname;
@@ -77,8 +77,9 @@ public class CreateAccount_Page {
 		return password;
 	}
 
-	@FindBy(id="username")
-	private WebElement signInUsername;	
+	@FindBy(id = "username")
+	private WebElement signInUsername;
+
 	public WebElement getSignInUsername() {
 		return signInUsername;
 	}
@@ -125,7 +126,7 @@ public class CreateAccount_Page {
 	}
 
 	@FindBy(xpath = "//span[contains(text(),'Please enter your first name.')]")
-	//span[contains(text(),'Please enter a valid first name.')]
+	// span[contains(text(),'Please enter a valid first name.')]
 	private WebElement fnameNullErrormsg;
 
 	public WebElement getFnameNullErrormsg() {
@@ -221,22 +222,22 @@ public class CreateAccount_Page {
 	public WebElement getTermscondirionErrormsg() {
 		return termscondirionErrormsg;
 	}
-	
-	@FindBy(xpath="//a[contains(text(),'Sign Out')]")
+
+	@FindBy(xpath = "//a[contains(text(),'Sign Out')]")
 	private WebElement signOutlink;
+
 	public WebElement getSignOutlink() {
 		return signOutlink;
 	}
-	
-	public void signInwithValiddata() throws InterruptedException
-	{
-		 getMyAccountLink().click();
-		 Thread.sleep(2000);
-		 getSignInUsername().sendKeys("dipalitailor123@gmail.com");;
-		 getPassword().sendKeys("Dipali123#");
-		 getSignInButton().click();
-		 
+
+	public void signInwithValiddata() throws InterruptedException {
+		getMyAccountLink().click();
+		Thread.sleep(2000);
+		getSignInUsername().sendKeys("dipalitailor123@gmail.com");
+		;
+		getPassword().sendKeys("Dipali123#");
+		getSignInButton().click();
+
 	}
-	
 
 }

@@ -57,8 +57,6 @@ public class TestSet {
 		return creditCard_page;
 	}
 
-
-
 	public MyAccount_Page myAccount_page;
 
 	public MyAccount_Page getMyAccount_page() {

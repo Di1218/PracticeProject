@@ -1,19 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite parallel="tests" name="Failed suite [walmarttest]">
+  <listeners>
+    <listener class-name="extentReport.Extentreport_listener"/>
+  </listeners>
+  <test parallel="tests" name="Walmart(failed)">
     <classes>
+      <class name="testsLayer.OrderHistory_Test">
+        <methods>
+          <include name="TC_84_Order_History_Start_Shopping_link"/>
+          <include name="objectSet"/>
+          <include name="TC_83_Order_history_noOrder_placed"/>
+        </methods>
+      </class> <!-- testsLayer.OrderHistory_Test -->
+      <class name="testsLayer.MyRecommendation_Test">
+        <methods>
+          <include name="TC_93_My_Recommendation_page_text_verify"/>
+          <include name="objectSet"/>
+        </methods>
+      </class> <!-- testsLayer.MyRecommendation_Test -->
+      <class name="testsLayer.MyRegistries_Test">
+        <methods>
+          <include name="TC_98_My_Registries_page_create_BabyORWedding_registries"/>
+          <include name="objectSet"/>
+        </methods>
+      </class> <!-- testsLayer.MyRegistries_Test -->
+      <class name="testsLayer.SearchProducts_Test">
+        <methods>
+          <include name="TC_35_My_Account_page"/>
+          <include name="TC_62_Sort_items"/>
+          <include name="TC_64_filter_items"/>
+          <include name="objectSet"/>
+          <include name="TC_65_sorting_and_filtering_together"/>
+          <include name="TC_63_Sort_morethan_1_items"/>
+          <include name="tear"/>
+        </methods>
+      </class> <!-- testsLayer.SearchProducts_Test -->
+      <class name="testsLayer.MyAccount_Test">
+        <methods>
+          <include name="TC_39_My_account_page_modification_of_orders_with_valid_ordernum"/>
+          <include name="TC_40_My_account_page_modification_of_orders_with_Invalid_ordernum"/>
+          <include name="objectSet"/>
+          <include name="TC_41_My_account_page_clickOn_view_order"/>
+          <include name="TC_36_My_Account_page_shipping_num"/>
+        </methods>
+      </class> <!-- testsLayer.MyAccount_Test -->
+      <class name="testsLayer.Addresses_Test">
+        <methods>
+          <include name="objectSet"/>
+          <include name="TC_42_Addresses_page_add_address_with_valid_data"/>
+          <include name="TC_43_Addresses_page_add_address_with_Invalid_data"/>
+        </methods>
+      </class> <!-- testsLayer.Addresses_Test -->
+      <class name="testsLayer.MyLists_Test">
+        <methods>
+          <include name="TC_95_My_Lists_Page_searchBox"/>
+          <include name="objectSet"/>
+        </methods>
+      </class> <!-- testsLayer.MyLists_Test -->
       <class name="testsLayer.CreateAccount_Test">
         <methods>
-          <include name="TC_14_createAccount_with_valid_emailId"/>
+          <include name="TC_10_createAccount_Lastname_invalidchar"/>
           <include name="TC_1_createAccount_Firstname_with_2_char"/>
           <include name="TC_19_createAccount_check_password_in_bulletform"/>
-          <include name="TC_16_createAccount_with_Null_emailId"/>
+          <include name="TC_5_createAccount_Firstname_invalidchar"/>
+          <include name="TC_22_createAccount_with_moderate_password_min_6_char"/>
           <include name="objectSet"/>
           <include name="tearDown"/>
           <include name="TC_34_RegisteredUesr_navigation_from_signout_to_signin"/>
         </methods>
       </class> <!-- testsLayer.CreateAccount_Test -->
+      <class name="testsLayer.CreditCard_Test">
+        <methods>
+          <include name="TC_48_CreditCard_page_Edit_or_add_creditcard_Invaliddata"/>
+          <include name="objectSet"/>
+          <include name="TC_46_CreditCard_page"/>
+          <include name="Tc_47_CreditCard_page_Edi_or_add_creditcard_validdata"/>
+        </methods>
+      </class> <!-- testsLayer.CreditCard_Test -->
+      <class name="testsLayer.ShoppingCart_Test">
+        <methods>
+          <include name="TC_73_increase_the_quantity_multipletime_forthe_same_item_and_check_display"/>
+          <include name="TC_78_addItem_closeBrowser_reOpenthe_samesite"/>
+          <include name="TC_71_increase_quantity_ofthe_same_item_with_plussign"/>
+          <include name="TC_75_remove_items_from_shoppingcart"/>
+          <include name="TC_72_increase_quantity_ofthe_same_item_byentering_numbers"/>
+          <include name="TC_77_clickOn_stored_items_in_shoppingcart"/>
+          <include name="objectSet"/>
+          <include name="TC_50_new_creditcard_customfield"/>
+          <include name="TC_76_remove_all_items_from_shoppingcart"/>
+          <include name="TC_70_Add_1_item_tothe_cart"/>
+          <include name="TC_49_online_payment_multiple_payment_options"/>
+          <include name="TC_54_Free_shipping_option"/>
+          <include name="TC_74_add_different_items_in_shoppingcart"/>
+        </methods>
+      </class> <!-- testsLayer.ShoppingCart_Test -->
+      <class name="testsLayer.PersonalSetting_Test">
+        <methods>
+          <include name="objectSet"/>
+          <include name="TC_86_Personal_Setting_page_email_editing"/>
+          <include name="TC_85_Personal_Setting_page_personal_info_editing"/>
+          <include name="TC_87_Personal_Setting_page_password_editing"/>
+          <include name="TC_88_Personal_Setting_page_language_editing"/>
+        </methods>
+      </class> <!-- testsLayer.PersonalSetting_Test -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Walmart(failed) -->
+</suite> <!-- Failed suite [walmarttest] -->
