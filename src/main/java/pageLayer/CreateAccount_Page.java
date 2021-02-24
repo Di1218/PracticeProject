@@ -15,22 +15,23 @@ public class CreateAccount_Page {
 	}
 
 	@FindBy(xpath = "//a[contains(text(),'Create account')]")
-	private WebElement createAccolink;
+	private WebElement createAccolink;	
 
 	public WebElement getCreateAccolink() {
 		return createAccolink;
-	}
-
+	}	
+	
 	@FindBy(xpath = "//span[contains(text(),'My account')]")
-	private WebElement myAccountLink;
+	private WebElement myAccountLink;	
 
 	public WebElement getMyAccountLink() {
 		return myAccountLink;
 	}
+	
 
 	@FindBy(xpath = "//span[contains(text(),'Sign in')]")
 	private WebElement signInLink;
-
+	
 	public WebElement getSignInLink() {
 		return signInLink;
 	}
